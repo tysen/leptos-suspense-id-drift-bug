@@ -1,0 +1,26 @@
+[package]
+name = "leptos-suspense-id-drift-bug"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+any_spawner = { version = "0.3", features = ["tokio"] }
+futures = "0.3"
+hydration_context = "0.3"
+leptos = { version = "=0.9.0-alpha", features = ["ssr"] }
+tokio = { version = "1", features = ["macros", "rt", "time"] }
+
+# To run against a local Leptos checkout (e.g. to validate a fix), uncomment
+# and point at the checkout's workspace members.
+#
+# [patch.crates-io]
+# leptos = { path = "/path/to/leptos/leptos" }
+# leptos_server = { path = "/path/to/leptos/leptos_server" }
+# tachys = { path = "/path/to/leptos/tachys" }
+# any_spawner = { path = "/path/to/leptos/any_spawner" }
+# hydration_context = { path = "/path/to/leptos/hydration_context" }
+# reactive_graph = { path = "/path/to/leptos/reactive_graph" }
+# reactive_stores = { path = "/path/to/leptos/reactive_stores" }
+# server_fn = { path = "/path/to/leptos/server_fn" }
+# leptos_dom = { path = "/path/to/leptos/leptos_dom" }
+# leptos_macro = { path = "/path/to/leptos/leptos_macro" }
